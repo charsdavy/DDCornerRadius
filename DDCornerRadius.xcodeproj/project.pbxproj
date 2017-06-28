@@ -16,8 +16,8 @@
 		D5F86D801F029E7D008AFF64 /* DDCornerRadiusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F86D7F1F029E7D008AFF64 /* DDCornerRadiusTests.m */; };
 		D5F86D8B1F029E7D008AFF64 /* DDCornerRadiusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F86D8A1F029E7D008AFF64 /* DDCornerRadiusUITests.m */; };
 		D5F86D9B1F02A03B008AFF64 /* DDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F86D9A1F02A03B008AFF64 /* DDTableViewCell.m */; };
-		D5F86D9E1F02A083008AFF64 /* UIImage+DDCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F86D9D1F02A083008AFF64 /* UIImage+DDCornerRadius.m */; };
-		D5F86DA11F02A227008AFF64 /* UIView+DDCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F86DA01F02A227008AFF64 /* UIView+DDCornerRadius.m */; };
+		D5FD63D61F032B120091B1D1 /* UIImage+DDCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FD63D31F032B120091B1D1 /* UIImage+DDCornerRadius.m */; };
+		D5FD63D71F032B120091B1D1 /* UIView+DDCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FD63D51F032B120091B1D1 /* UIView+DDCornerRadius.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		D5F86D8C1F029E7D008AFF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5F86D991F02A03B008AFF64 /* DDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewCell.h; sourceTree = "<group>"; };
 		D5F86D9A1F02A03B008AFF64 /* DDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewCell.m; sourceTree = "<group>"; };
-		D5F86D9C1F02A083008AFF64 /* UIImage+DDCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DDCornerRadius.h"; sourceTree = "<group>"; };
-		D5F86D9D1F02A083008AFF64 /* UIImage+DDCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DDCornerRadius.m"; sourceTree = "<group>"; };
-		D5F86D9F1F02A227008AFF64 /* UIView+DDCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDCornerRadius.h"; sourceTree = "<group>"; };
-		D5F86DA01F02A227008AFF64 /* UIView+DDCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDCornerRadius.m"; sourceTree = "<group>"; };
+		D5FD63D21F032B120091B1D1 /* UIImage+DDCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DDCornerRadius.h"; sourceTree = "<group>"; };
+		D5FD63D31F032B120091B1D1 /* UIImage+DDCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DDCornerRadius.m"; sourceTree = "<group>"; };
+		D5FD63D41F032B120091B1D1 /* UIView+DDCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDCornerRadius.h"; sourceTree = "<group>"; };
+		D5FD63D51F032B120091B1D1 /* UIView+DDCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDCornerRadius.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		D5F86D641F029E7D008AFF64 /* DDCornerRadius */ = {
 			isa = PBXGroup;
 			children = (
-				D5F86D981F029F86008AFF64 /* DDCornerRadiusKit */,
+				D5FD63D11F032B120091B1D1 /* DDCornerRadiusKit */,
 				D5F86D681F029E7D008AFF64 /* AppDelegate.h */,
 				D5F86D691F029E7D008AFF64 /* AppDelegate.m */,
 				D5F86D991F02A03B008AFF64 /* DDTableViewCell.h */,
@@ -152,13 +152,13 @@
 			path = DDCornerRadiusUITests;
 			sourceTree = "<group>";
 		};
-		D5F86D981F029F86008AFF64 /* DDCornerRadiusKit */ = {
+		D5FD63D11F032B120091B1D1 /* DDCornerRadiusKit */ = {
 			isa = PBXGroup;
 			children = (
-				D5F86D9C1F02A083008AFF64 /* UIImage+DDCornerRadius.h */,
-				D5F86D9D1F02A083008AFF64 /* UIImage+DDCornerRadius.m */,
-				D5F86D9F1F02A227008AFF64 /* UIView+DDCornerRadius.h */,
-				D5F86DA01F02A227008AFF64 /* UIView+DDCornerRadius.m */,
+				D5FD63D21F032B120091B1D1 /* UIImage+DDCornerRadius.h */,
+				D5FD63D31F032B120091B1D1 /* UIImage+DDCornerRadius.m */,
+				D5FD63D41F032B120091B1D1 /* UIView+DDCornerRadius.h */,
+				D5FD63D51F032B120091B1D1 /* UIView+DDCornerRadius.m */,
 			);
 			path = DDCornerRadiusKit;
 			sourceTree = "<group>";
@@ -302,9 +302,9 @@
 				D5F86D6D1F029E7D008AFF64 /* ViewController.m in Sources */,
 				D5F86D6A1F029E7D008AFF64 /* AppDelegate.m in Sources */,
 				D5F86D671F029E7D008AFF64 /* main.m in Sources */,
-				D5F86D9E1F02A083008AFF64 /* UIImage+DDCornerRadius.m in Sources */,
+				D5FD63D61F032B120091B1D1 /* UIImage+DDCornerRadius.m in Sources */,
 				D5F86D9B1F02A03B008AFF64 /* DDTableViewCell.m in Sources */,
-				D5F86DA11F02A227008AFF64 /* UIView+DDCornerRadius.m in Sources */,
+				D5FD63D71F032B120091B1D1 /* UIView+DDCornerRadius.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +544,7 @@
 				D5F86D911F029E7D008AFF64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5F86D921F029E7D008AFF64 /* Build configuration list for PBXNativeTarget "DDCornerRadiusTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +553,7 @@
 				D5F86D941F029E7D008AFF64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5F86D951F029E7D008AFF64 /* Build configuration list for PBXNativeTarget "DDCornerRadiusUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +562,7 @@
 				D5F86D971F029E7D008AFF64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
