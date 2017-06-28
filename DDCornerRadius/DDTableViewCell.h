@@ -10,4 +10,8 @@
 
 @interface DDTableViewCell : UITableViewCell
 
+@property (nonatomic) UIImageView *leftImageView;
+@property (nonatomic) UIImageView *centerImageView;
+@property (nonatomic) UIImageView *rightImageView;
+
 @end

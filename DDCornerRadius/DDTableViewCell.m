@@ -7,15 +7,12 @@
 //
 
 #import "DDTableViewCell.h"
+#import "UIImage+DDCornerRadius.h"
 
 #define WIDTH_AND_HEIGHT_SCALE (3.0 / 2.0)
 #define CONTENT_INSET          10.0
 
 @interface DDTableViewCell ()
-
-@property (nonatomic) UIImageView *leftImageView;
-@property (nonatomic) UIImageView *centerImageView;
-@property (nonatomic) UIImageView *rightImageView;
 
 @end
 
@@ -58,7 +55,7 @@
 {
     if (!_rightImageView) {
         _rightImageView = [[UIImageView alloc] init];
-        _rightImageView.image = [UIImage imageNamed:@"demo3"];
+        _rightImageView.image = [[UIImage imageNamed:@"demo3"] dd_imageByCornerRadius:40.0 corners:(UIRectCornerTopLeft | UIRectCornerBottomRight) borderWidth:5.0 borderColor:[UIColor redColor]];
     }
     return _rightImageView;
 }
