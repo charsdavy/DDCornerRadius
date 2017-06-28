@@ -23,12 +23,14 @@
  @param scaleSize 图片将会缩放成的目标大小
  @param borderWidth 边框宽度
  @param borderColor 边框颜色
+ @param corners 图片圆角样式（UIRectCorner）
  @return 返回处理之后的图片
  */
 - (nullable UIImage *)dd_imageByCornerRadius:(CGFloat)radius
                                    scaleSize:(CGSize)scaleSize
                                  borderWidth:(CGFloat)borderWidth
-                                 borderColor:(nullable UIColor *)borderColor;
+                                 borderColor:(nullable UIColor *)borderColor
+                                     corners:(UIRectCorner)corners;
 
 /**
  图片加上圆形边框，图片必须得是正方形的，否则直接返回未加边框的原图片(PS:此操作是线程安全的)
@@ -53,11 +55,13 @@
  @param radius 圆角大小
  @param borderColor 边框颜色
  @param borderWidth 边框宽度
+ @param corners 图片圆角样式（UIRectCorner）
  @return 返回处理之后的图片
  */
 - (nullable UIImage *)dd_imageByCornerRadius:(CGFloat)radius
                                borderedColor:(nullable UIColor *)borderColor
-                                 borderWidth:(CGFloat)borderWidth;
+                                 borderWidth:(CGFloat)borderWidth
+                                     corners:(UIRectCorner)corners;
 
 /**
  将图片指定圆角样式处理，并加上边框(PS:此操作是线程安全的)。
@@ -68,8 +72,8 @@
  @return 返回处理之后的图片
  */
 - (nullable UIImage *)dd_imageByCornerRadius:(CGFloat)radius
-                            corners:(UIRectCorner)corners
-                        borderWidth:(CGFloat)borderWidth
-                        borderColor:(nullable UIColor *)borderColor;
+                                     corners:(UIRectCorner)corners
+                                 borderWidth:(CGFloat)borderWidth
+                                 borderColor:(nullable UIColor *)borderColor;
 
 @end
