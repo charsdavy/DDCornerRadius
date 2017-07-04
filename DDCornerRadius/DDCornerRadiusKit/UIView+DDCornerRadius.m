@@ -11,7 +11,8 @@
 
 @implementation UIView (DDCornerRadius)
 
-- (void)dd_quadrateCornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color
+- (void)dd_quadrateCornerWithRadius:(CGFloat)radius
+                        cornerColor:(UIColor *)color
 {
     if (!color) {
         color = [self cornerColor];
@@ -20,7 +21,9 @@
     [self.layer dd_cornerWithRadius:radius cornerColor:color];
 }
 
-- (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color corners:(UIRectCorner)corners
+- (void)dd_cornerWithRadius:(CGFloat)radius
+                cornerColor:(UIColor *)color
+                    corners:(UIRectCorner)corners
 {
     if (!color) {
         color = [self cornerColor];
@@ -29,7 +32,11 @@
     [self.layer dd_cornerWithRadius:radius cornerColor:color corners:corners];
 }
 
-- (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color corners:(UIRectCorner)corners borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth
+- (void)dd_cornerWithRadius:(CGFloat)radius
+                cornerColor:(UIColor *)color
+                    corners:(UIRectCorner)corners
+                borderColor:(UIColor *)borderColor
+                borderWidth:(CGFloat)borderWidth
 {
     if (!color) {
         color = [self cornerColor];
@@ -38,7 +45,10 @@
     [self.layer dd_cornerWithRadius:radius cornerColor:color corners:corners borderColor:borderColor borderWidth:borderWidth];
 }
 
-- (void)dd_quadrateCornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth
+- (void)dd_quadrateCornerWithRadius:(CGFloat)radius
+                        cornerColor:(UIColor *)color
+                        borderColor:(UIColor *)borderColor
+                        borderWidth:(CGFloat)borderWidth
 {
     [self dd_cornerWithRadius:radius cornerColor:color corners:UIRectCornerAllCorners borderColor:borderColor borderWidth:borderWidth];
 }
@@ -63,7 +73,8 @@ static NSMutableSet<UIImage *> *maskCornerRaidusImageSet;
 
 @implementation NSObject (DDCornerRadius)
 
-- (void)dd_setCornerRadiusAttribute:(id)value withKey:(void *)key
+- (void)dd_setCornerRadiusAttribute:(id)value
+                            withKey:(void *)key
 {
     objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -82,7 +93,12 @@ static NSMutableSet<UIImage *> *maskCornerRaidusImageSet;
 
 @implementation UIImage (DDCornerRadius)
 
-+ (UIImage *)dd_maskRoundCornerRadiusImageWithColor:(UIColor *)color cornerRadii:(CGSize)cornerRadii size:(CGSize)size corners:(UIRectCorner)corners borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth
++ (UIImage *)dd_maskRoundCornerRadiusImageWithColor:(UIColor *)color
+                                        cornerRadii:(CGSize)cornerRadii
+                                               size:(CGSize)size
+                                            corners:(UIRectCorner)corners
+                                        borderColor:(UIColor *)borderColor
+                                        borderWidth:(CGFloat)borderWidth
 {
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -131,17 +147,24 @@ static NSMutableSet<UIImage *> *maskCornerRaidusImageSet;
     self.contents = (__bridge id)contentImage.CGImage;
 }
 
-- (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color
+- (void)dd_cornerWithRadius:(CGFloat)radius
+                cornerColor:(UIColor *)color
 {
     [self dd_cornerWithRadius:radius cornerColor:color corners:UIRectCornerAllCorners];
 }
 
-- (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color corners:(UIRectCorner)corners
+- (void)dd_cornerWithRadius:(CGFloat)radius
+                cornerColor:(UIColor *)color
+                    corners:(UIRectCorner)corners
 {
     [self dd_cornerWithRadius:radius cornerColor:color corners:corners borderColor:nil borderWidth:0];
 }
 
-- (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color corners:(UIRectCorner)corners borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth
+- (void)dd_cornerWithRadius:(CGFloat)radius
+                cornerColor:(UIColor *)color
+                    corners:(UIRectCorner)corners
+                borderColor:(UIColor *)borderColor
+                borderWidth:(CGFloat)borderWidth
 {
     if (!color) return;
     CALayer *cornerRadiusLayer = [self dd_getCornerRadiusAttributeForKey:_DDMaskCornerRadiusLayerKey];
