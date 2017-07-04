@@ -7,7 +7,7 @@
 //
 
 #import "DDTableViewCell.h"
-#import "UIImage+DDCornerRadius.h"
+#import "DDCornerRadius.h"
 
 #define WIDTH_AND_HEIGHT_SCALE (3.0 / 2.0)
 #define CONTENT_INSET          10.0

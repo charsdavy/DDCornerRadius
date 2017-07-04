@@ -43,7 +43,6 @@
 
  @param radius      圆角半径
  @param color       圆角背景色. 如果为nil,优先选取view,沿superview上的父类容器的背景色
- @param corners     圆角位置
  @param borderColor 边框颜色
  @param borderWidth 边框线宽
  */
@@ -53,7 +52,6 @@
 
 @interface CALayer (ZKRCornerRadius)
 
-/**如下分别对应UIView的相应API*/
 - (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color;
 
 - (void)dd_cornerWithRadius:(CGFloat)radius cornerColor:(UIColor *)color corners:(UIRectCorner)corners;

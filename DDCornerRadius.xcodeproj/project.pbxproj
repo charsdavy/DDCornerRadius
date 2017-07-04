@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5C1F1981F0B185D0048B3F3 /* DDCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCornerRadius.h; sourceTree = "<group>"; };
 		D5F86D621F029E7D008AFF64 /* DDCornerRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCornerRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F86D661F029E7D008AFF64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5F86D681F029E7D008AFF64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +160,7 @@
 				D5FD63D31F032B120091B1D1 /* UIImage+DDCornerRadius.m */,
 				D5FD63D41F032B120091B1D1 /* UIView+DDCornerRadius.h */,
 				D5FD63D51F032B120091B1D1 /* UIView+DDCornerRadius.m */,
+				D5C1F1981F0B185D0048B3F3 /* DDCornerRadius.h */,
 			);
 			path = DDCornerRadiusKit;
 			sourceTree = "<group>";
