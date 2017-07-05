@@ -111,7 +111,7 @@ static NSMutableSet<UIImage *> *maskCornerRaidusImageSet;
     [rectPath appendPath:roundPath];
     CGContextAddPath(context, rectPath.CGPath);
     CGContextEOFillPath(context);
-    if (!borderColor || !borderWidth) {
+    if (borderColor && borderWidth) {
         [borderColor set];
         UIBezierPath *borderOutterPath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:cornerRadii];
         UIBezierPath *borderInnerPath = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(rect, borderWidth, borderWidth) byRoundingCorners:corners cornerRadii:cornerRadii];
