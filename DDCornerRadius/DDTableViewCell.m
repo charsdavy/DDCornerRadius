@@ -55,7 +55,6 @@
 {
     if (!_rightImageView) {
         _rightImageView = [[UIImageView alloc] init];
-        _rightImageView.image = [[UIImage imageNamed:@"demo3"] dd_imageByCornerRadius:40.0 corners:(UIRectCornerTopLeft | UIRectCornerBottomRight) borderWidth:5.0 borderColor:[UIColor redColor]];
     }
     return _rightImageView;
 }
@@ -71,6 +70,7 @@
     CGFloat centerImageX = (size.width - imageW * 3 - CONTENT_INSET * 2) / 2.0 + CONTENT_INSET + imageW;
     self.centerImageView.frame = CGRectMake(centerImageX, CONTENT_INSET, imageW, imageH);
     self.rightImageView.frame = CGRectMake(size.width - CONTENT_INSET - imageW, CONTENT_INSET, imageW, imageH);
+    self.rightImageView.image = [[UIImage imageNamed:@"demo3"] dd_imageByCornerRadius:10.0 scaleSize:CGSizeMake(imageH, imageH) borderWidth:1.0 borderColor:[UIColor redColor] corners:(UIRectCornerTopLeft | UIRectCornerBottomRight)];
 }
 
 @end
