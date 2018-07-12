@@ -20,3 +20,6 @@ imageView.image = [[UIImage imageNamed:@"demo3"] dd_imageByCornerRadius:40.0 cor
 ```
 imageView = [UIImageView dd_cornerWithRadius:40.0 cornerColor:[UIColor redColor] corners:(UIRectCornerTopLeft | UIRectCornerBottomRight) ];
 ```
+# ScreenShot
+
+![ScreenShot](./ScreenShot.png)
