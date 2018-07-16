@@ -1,22 +1,18 @@
 //
-//  DDTableViewCell.m
-//  DDCornerRadius
+//  ExampleTableViewCell.m
+//  Example
 //
-//  Created by dengw on 2017/6/27.
-//  Copyright © 2017年 Chars. All rights reserved.
+//  Created by chars on 2018/7/16.
+//  Copyright © 2018年 chars. All rights reserved.
 //
 
-#import "DDTableViewCell.h"
+#import "ExampleTableViewCell.h"
 #import "DDCornerRadius.h"
 
 #define WIDTH_AND_HEIGHT_SCALE (3.0 / 2.0)
 #define CONTENT_INSET          10.0
 
-@interface DDTableViewCell ()
-
-@end
-
-@implementation DDTableViewCell
+@implementation ExampleTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -62,7 +58,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
+
     CGSize size = self.bounds.size;
     CGFloat imageH = size.height - CONTENT_INSET * 2;
     CGFloat imageW = imageH * WIDTH_AND_HEIGHT_SCALE;

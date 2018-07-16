@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  DDCornerRadius
+//  Example
 //
-//  Created by dengw on 2017/6/27.
-//  Copyright © 2017年 Chars. All rights reserved.
+//  Created by chars on 2018/7/16.
+//  Copyright © 2018年 chars. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -18,10 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

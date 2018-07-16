@@ -1,18 +1,18 @@
 //
-//  DDCornerRadiusUITests.m
-//  DDCornerRadiusUITests
+//  ExampleUITests.m
+//  ExampleUITests
 //
-//  Created by dengw on 2017/6/27.
-//  Copyright © 2017年 Chars. All rights reserved.
+//  Created by chars on 2018/7/16.
+//  Copyright © 2018年 chars. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface DDCornerRadiusUITests : XCTestCase
+@interface ExampleUITests : XCTestCase
 
 @end
 
-@implementation DDCornerRadiusUITests
+@implementation ExampleUITests
 
 - (void)setUp {
     [super setUp];

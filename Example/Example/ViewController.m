@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  DDCornerRadius
+//  Example
 //
-//  Created by dengw on 2017/6/27.
-//  Copyright © 2017年 Chars. All rights reserved.
+//  Created by chars on 2018/7/16.
+//  Copyright © 2018年 chars. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "DDTableViewCell.h"
+#import "ExampleTableViewCell.h"
 
 #define CELL_HEIGHT 80.0
 
@@ -17,13 +17,17 @@
 
 @end
 
+@interface ViewController ()
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     [self.view addSubview:self.tableView];
 }
 
@@ -52,9 +56,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellId = @"ViewControllerCellId";
-    DDTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    ExampleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
-        cell = [[DDTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[ExampleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     return cell;
 }
@@ -65,5 +69,6 @@
 {
     return CELL_HEIGHT;
 }
+
 
 @end
