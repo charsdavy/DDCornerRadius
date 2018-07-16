@@ -57,4 +57,4 @@ imageView = [UIImageView dd_cornerWithRadius:40.0 cornerColor:[UIColor redColor]
 ```
 # ScreenShot
 
-![ScreenShot](./ScreenShot.gif)
+![ScreenShot](./Screenshot.gif)
