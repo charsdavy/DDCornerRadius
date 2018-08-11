@@ -1,5 +1,16 @@
 # DDCornerRadius
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
+            )](http://mit-license.org)
+[![Platform](http://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat
+             )](https://developer.apple.com/resources/)
+![Language](http://img.shields.io/badge/language-Objc-orange.svg?style=flat
+             )
+             
+[![Issues](https://img.shields.io/github/issues/charsdavy/DDCornerRadius.svg?style=flat
+           )](https://github.com/charsdavy/DDCornerRadius/issues)
+[![Cocoapod](http://img.shields.io/cocoapods/v/SwiftyStoreKit.svg?style=flat)](http://cocoadocs.org/docsets/SwiftyStoreKit/)
+
 Optimize image fillet processing to avoid performance loss caused by off-screen rendering and optimize the stuck phenomenon.
 
 ## Installation
